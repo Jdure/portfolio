@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      heading: ["Quicksand", "sans-serif"],
+    },
   },
   plugins: [require("daisyui")],
 };

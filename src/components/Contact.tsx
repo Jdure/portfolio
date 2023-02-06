@@ -3,7 +3,7 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export const Contact = () => {
   return (
-    <div className="flex flex-col justify-evenly items-center">
+    <div id="contact" className="flex flex-col justify-evenly items-center">
       <h1 className="text-2xl py-2">Contact</h1>
       <p className="text-lg">Have a project and need a developer? </p>
       <p>

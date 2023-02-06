@@ -2,15 +2,18 @@ import React from "react";
 import { Card } from "./Card";
 
 export const Projects = () => {
-  const items = 4;
+  const items = 3;
   return (
-    <div className="flex-1 justify-center py-2 space-y-4">
-      <h2 className="text-3xl text-center">Projects</h2>
-      <div className="flex-col space-y-4">
-        {[...Array(items)].map((item, idx) => (
-          <Card key={idx} />
-        ))}
+    <>
+      <div id="projects" className="flex flex-col justify-center items-center">
+        <h2 className="text-3xl text-center pb-4">Projects</h2>
+        <div className="sm:flex sm:flex-row sm:space-x-6 sm:justify-between">
+          {[...Array(items)].map((item, idx) => (
+            <Card key={idx} />
+          ))}
+        </div>
       </div>
-    </div>
+      <div className="divider w-1/2 mx-auto"></div>
+    </>
   );
 };

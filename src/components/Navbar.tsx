@@ -36,7 +36,7 @@ export const Navbar = () => {
           <Link className="p-2 hover:bg-slate-100" href="#about">
             About
           </Link>
-          <Link className="p-2 hover:bg-slate-100" href="#projets">
+          <Link className="p-2 hover:bg-slate-100" href="#projects">
             Projects
           </Link>
           <Link className="p-2 hover:bg-slate-100" href="#contact">
@@ -49,7 +49,7 @@ export const Navbar = () => {
         <Link className="p-2" href="#about">
           About
         </Link>
-        <Link className="p-2" href="#projets">
+        <Link className="p-2" href="#projects">
           Projects
         </Link>
         <Link className="p-2" href="#contact">

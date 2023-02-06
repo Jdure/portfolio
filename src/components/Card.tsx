@@ -3,13 +3,14 @@ import Image from "next/image";
 
 export const Card = () => {
   return (
-    <div className="card w-80 bg-base-300 shadow-sm mx-auto pt-4">
-      <figure className="image-full">
+    <div className="card w-72 bg-base-300 shadow-sm my-4 sm:w-1/3 sm:mx-2">
+      <figure className="">
         <Image
-          src={"https://via.placeholder.com/250"}
+          className="rounded"
+          src={"https://via.placeholder.com/1080x720"}
           alt={"Some alt text"}
-          height={250}
-          width={250}
+          height={1080}
+          width={720}
         ></Image>
       </figure>
       <div className="card-body">

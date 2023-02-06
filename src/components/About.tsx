@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <>
-      <div className="flex-col justify-center py-2 space-y-4">
+      <div id="about" className="flex-col justify-center py-2 space-y-4">
         <h2 className="text-3xl text-center">About me</h2>
         <p className="text-lg text-center w-4/5 mx-auto">
           Following my passion for web development has been the highlight of my

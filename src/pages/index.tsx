@@ -1,10 +1,8 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -18,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }

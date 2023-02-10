@@ -6,7 +6,10 @@ export const Hero = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-5 sm:pt-20 sm:flex-row">
-        <div className="flex flex-col items-center space-y-4 sm:items-start sm:space-y-2 sm:basis-3/5">
+        <div
+          id="about"
+          className="flex flex-col items-center space-y-4 sm:items-start sm:space-y-2 sm:basis-3/5"
+        >
           <h1 className="text-4xl sm:mx-24">Hi, I&apos;m Jonathan</h1>
           <p className="text-2xl text-center w-3/4 sm:text-xl sm:mx-24 sm:text-justify">
             <span className="text-secondary font-semibold dark:text-primary-content">

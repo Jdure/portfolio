@@ -5,7 +5,7 @@ export const Projects = () => {
   const items = 3;
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center py-10">
         <h2 className="text-3xl sm:mx-24">Latest projects</h2>
         <div id="projects" className="flex flex-col items-center">
           <div className="sm:flex sm:flex-row sm:flex-wrap sm:space-x-4">

@@ -5,15 +5,16 @@ export const Projects = () => {
   const items = 3;
   return (
     <>
-      <div id="projects" className="flex flex-col justify-center items-center">
-        <h2 className="text-3xl text-center pb-4">Projects</h2>
-        <div className="sm:flex sm:flex-row sm:space-x-6 sm:justify-between">
-          {[...Array(items)].map((item, idx) => (
-            <Card key={idx} />
-          ))}
+      <div className="flex flex-col justify-center items-center">
+        <h2 className="text-3xl sm:mx-24">Latest projects</h2>
+        <div id="projects" className="flex flex-col items-center">
+          <div className="sm:flex sm:flex-row sm:flex-wrap sm:space-x-4">
+            {[...Array(items)].map((item, idx) => (
+              <Card key={idx} />
+            ))}
+          </div>
         </div>
       </div>
-      <div className="divider w-1/2 mx-auto"></div>
     </>
   );
 };

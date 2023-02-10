@@ -9,8 +9,13 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      heading: ["Quicksand", "sans-serif"],
+      heading: ["Nunito", "sans-serif"],
+      body: ["Nunito Sans", "sans-serif"],
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["emerald", "business"],
+  },
+  darkMode: ["class", "[data-theme='business']"],
 };

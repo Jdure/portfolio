@@ -1,19 +1,31 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
+import { FaRegMoon, FaSun } from "react-icons/fa";
 
 export const Navbar = () => {
+  const [theme, setTheme] = React.useState("emerald");
+  const switchTheme = () => {
+    setTheme(theme === "business" ? "emerald" : "business");
+  };
+
+  React.useEffect(() => {
+    document.querySelector("html")?.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
-    <div className="navbar bg-base-300 shadow-sm mb-4">
-      <div className="navbar-start flex-1">
-        <Image
-          src={"https://source.unsplash.com/sibVwORYqs0/720x720"}
-          alt="Avatar of Jonathan"
-          height={50}
-          width={50}
-          className="w-10 rounded-full"
-        />
+    <div className="navbar flex bg-secondary-content dark:bg-base-200">
+      <div className="navbar-start basis-4/5">
+        <p className="font-semibold">Code by JD</p>
       </div>
+      <label className="swap swap-rotate sm:px-2">
+        <input onClick={switchTheme} type="checkbox" />
+        <div className="swap-on">
+          <FaRegMoon />
+        </div>
+        <div className="swap-off">
+          <FaSun />
+        </div>
+      </label>
       {/* Mobile Menu */}
       <div className="dropdown dropdown-end sm:hidden">
         <label tabIndex={0} className="btn btn-ghost m-1">
@@ -33,19 +45,19 @@ export const Navbar = () => {
           </svg>
         </label>
         <ul className="dropdown-content menu pt-2 shadow bg-base-100 w-36 mt-2 text-right">
-          <Link className="p-2 hover:bg-slate-100" href="#about">
+          <Link className="p-2" href="#about">
             About
           </Link>
-          <Link className="p-2 hover:bg-slate-100" href="#projects">
+          <Link className="p-2" href="#projects">
             Projects
           </Link>
-          <Link className="p-2 hover:bg-slate-100" href="#contact">
+          <Link className="p-2" href="#contact">
             Contact
           </Link>
         </ul>
       </div>
       {/* Desktop Menu */}
-      <div className="navbar-end hidden sm:flex">
+      <div className="navbar-end hidden sm:flex sm:w-auto">
         <Link className="p-2" href="#about">
           About
         </Link>

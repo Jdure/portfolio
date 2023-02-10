@@ -6,7 +6,9 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen bg-secondary-content dark:bg-base-100">
+        {children}
+      </main>
       <Footer />
     </>
   );

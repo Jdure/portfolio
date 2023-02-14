@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 
-const projectsDir = path.join(process.cwd(), "projects")
+const projectsDir = path.join(process.cwd(), "content")
 
 export const getAllProjectSlugs = () => {
     const fileNames = fs.readdirSync(projectsDir)

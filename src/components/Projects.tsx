@@ -1,8 +1,23 @@
 import React from "react";
 import { Card } from "./Card";
 
-export const Projects = () => {
+type dataProps = {
+  slug: string;
+  frontmatter: projectProps;
+};
+
+type projectProps = {
+  title: string;
+  author: string;
+  category: string;
+  date: Date;
+  bannerImage: string;
+  tags: string[];
+};
+
+export const Projects = (data: dataProps[]) => {
   const items = 3;
+  console.log(data);
   return (
     <>
       <div className="flex flex-col justify-center items-center py-10">

@@ -37,6 +37,7 @@ export const Hero = () => {
             alt={"DrawKit Avatar"}
             width={1080}
             height={720}
+            priority
           />
         </div>
       </div>

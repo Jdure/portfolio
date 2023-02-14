@@ -40,7 +40,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export async function getStaticProps({ params }: { params: Params; }) {
-  const postData = getProjectData(params?.slug);
+  const postData = await getProjectData(params?.slug);
   return {
     props: {
       postData

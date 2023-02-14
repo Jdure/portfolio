@@ -39,40 +39,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
- const postData = getProjectData(params.id)
+export async function getStaticProps({ params }: { params: Params; }) {
+  const postData = getProjectData(params?.slug);
   return {
     props: {
       postData
     },
   };
-};
-
-// export const getStaticPaths: GetStaticPaths<Params> = async () => {
-//   const files = fs.readdirSync("projects");
-
-//   const paths = files.map((filename) => ({
-//     params: {
-//       slug: filename.split(".")[0],
-//     },
-//   }));
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
-
-// export async function getStaticProps({ params }: { params: Params }) {
-//   const directory = path.join(process.cwd(), "projects");
-//   const fileContents = fs.readFileSync(directory + `/${params.slug}`, "utf-8");
-//   const { data: frontmatter, content } = matter(fileContents);
-
-//   return {
-//     props: {
-//       frontmatter,
-//       content,
-//     },
-//   };
-// }
+}
 
 export default ProjectPage;

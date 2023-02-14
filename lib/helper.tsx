@@ -9,7 +9,7 @@ export const getAllProjectSlugs = () => {
     return fileNames.map(fileName => {
         return {
             params: {
-                slug: filename.split(".")[0]
+                slug: fileName.split(".")[0]
             }
         }
     })
@@ -22,7 +22,7 @@ export function getProjectData(slug:string) {
     const matterResult = matter(fileContents)
 
     return {
-        id, 
+        slug, 
         ...matterResult.data
     }
 }

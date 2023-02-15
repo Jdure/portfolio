@@ -39,11 +39,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export async function getStaticProps({ params }: { params: Params; }) {
+export async function getStaticProps({ params }: { params: Params }) {
   const postData = await getProjectData(params?.slug);
   return {
     props: {
-      postData
+      postData,
     },
   };
 }

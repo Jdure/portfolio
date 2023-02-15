@@ -16,7 +16,7 @@ export const getAllProjectSlugs = () => {
 };
 
 export function getProjectData(slug: string) {
-  const fullPath = path.resolve("posts/", `${slug}.md`);
+  const fullPath = path.resolve("./posts", `${slug}.md`);
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   console.log(fileContents);

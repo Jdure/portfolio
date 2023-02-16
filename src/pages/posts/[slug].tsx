@@ -58,5 +58,3 @@ export function getStaticProps({ params }: { params: Params }) {
 }
 
 export default ProjectPage;
-
-// Error: ENOENT: no such file or directory, open '/workspaces/portfolio/projects/example-post-2.md'

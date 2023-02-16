@@ -2,14 +2,14 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 
-const projectsDir = path.join(process.cwd(), "posts")
+const projectsDir = path.join(process.cwd(), "projects")
 
 export const getProjectMetadata = () => {
   const files = fs.readdirSync(projectsDir);
 
   files.map((fileName) => {
     const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const readFile = fs.readFileSync(`projects/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);
 
     return {

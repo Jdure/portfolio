@@ -15,7 +15,7 @@ tags:
 
 I had a lot of fun creating with project, I created a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and more importantly manage client request. 
 
-I built this website with the following tech stack (skip this if you don't care, I won't judge you 😁)
+I built this website with the following tech stack (**skip** this if you don't care, I won't judge you 😁)
 
     - Next.js 
     - Tailwind
@@ -39,7 +39,7 @@ For the first goal, I was inspired to by magazines and photo catalogs. I wanted 
 
 ![carousel](image.jpg)
 
-As for the second goal, it was important for both me and the photographer that they're able to manage *most* of the content (more on this later..) and all of the upcoming request. So I looked for a CMS that could was user friendly but that had robust features. 
+As for the second goal, it was important for both me and the photographer that they're able to manage *most* of the content (more on this later..) and all of the upcoming request. So I looked for a CMS that was user friendly but that had robust features. 
 
 This is why I choose Directus, it's open source and plays nice with several databases creating either a REST of GraphQL API and it comes with roles, permissions, webhooks and flows that can be trigger by different events in the database.  
 
@@ -47,9 +47,9 @@ This is why I choose Directus, it's open source and plays nice with several data
 
 ![directus](image.jpg)
 
-Directus is definitely a top CMS because of all the feature it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me at least). As I said before, you can use its REST API to pull the all the data you need (text, images and component pieces) and guard the date you don't want to share publicly. 
+Directus is definitely a top CMS because of all the feature it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me at least). As I said before, you can use its REST API to pull the all the data that you need (text, images and component pieces) and guard the data you don't want to share publicly. 
 
-The only hiccup came when trying to self host it. It's not terrible but when I began testing it the documentation was full of different self hosting options. AWS, Digital Ocean, Heroku, anything really but a few days later they took those guides down and they provided only one option...
+The only hiccup came when trying to self-host it. It's not terrible but when I began testing it the documentation was full of different self hosting options. AWS, Digital Ocean, Heroku, anything really but a few days later they took those guides down and they provided only one option...
 
 DOCKER!
 
@@ -67,22 +67,12 @@ I can go on and on about Directus but the integration you can achieve with Next.
 
 I can't stress enough how I really enjoyed using this CMS. 
 
+Tailwind handled most of the design elements but I had to rely on a few third party libraries for certain use cases. For example the request form needed to allow clients to select specific dates and time while the UI needed to ommite timeslots that were no longer available. This was bit challenging since the html date-time input didn't have enough attributes to do this dynamically with out large chunks of code, so I opted for a third-party library react-datetime and it worked flawlessly. It allowed me to omit both dates and time slots while  
+
 ## Lessons Learned
 
-- [] What is the “killer feature” of your project? What feature does it have that took the 
-most work, or was the most technically impressive? Some possible examples: 
-    - [] A particularly tricky UI element (eg. autocomplete, calendar, drag-and-drop) 
-    - [] What were the technical hurdles that got in your way? Any major problems you hit 
-      during development? 
-    - [] How did you solve those problems? What was the solution? Go deep here, and write with a developer in mind. 
+On a technical level, getting familiar with docker and containerized applications was thrilling. The learning curve was a bit steep at first but it made the deployment process for this project a breeze. 
 
-- [] What did you learn doing this project? Feel free to list multiple things. Also feel free to 
-cover non-technical lessons. It’s great to talk about how you learned to use an 
-advanced feature of a framework or library, but it’s just as valuable to talk about 
-project-management experience, or things you learned about shipping projects. 
-- [] If you used a framework or other libraries/tools, was it a good choice? How did it 
-help? In which ways was it insufficient? 
-- [] Is your project accessible? What did you learn about accessibility, while building this 
-project? Describing how you tested your project using keyboard navigation or a screen reader can make for a really compelling story! 
-- [] How has this affected the work you’ve done since then? Real examples of how this 
-project built your knowledge for future projects is fantastic.
+the biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. I believe I built a very simple UI for visitors of the site but my priority was to ensure that the photographer had the ability to view their content, make necessary changes and manage their photoshoot request. Again, I think choosing Directus was perfect for both our needs as it offered so much with minimal setup. 
+
+Overall, I had a great time building this project.

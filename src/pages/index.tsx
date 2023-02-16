@@ -34,7 +34,7 @@ export default function Home({
           <div className="sm:flex sm:flex-row sm:flex-wrap sm:space-x-4">
             {projects.map((item: projectProps, idx: Key) => (
               <>
-                <Link key={item.slug} href={`/posts/${item.slug}`}>
+                <Link key={item.slug} href={`/projects/${item.slug}`}>
                   <Card
                     title={item.frontmatter.title}
                     bannerImage={item.frontmatter.bannerImage}
@@ -61,7 +61,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const projects = files.map((fileName) => {
     const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const readFile = fs.readFileSync(`projects/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);
 
     return {

@@ -3,6 +3,7 @@ import { GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { getAllProjectSlugs } from "../../../lib/helper";
 import { getProjectData } from "../../../lib/helper";
+import Link from "next/link";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -29,9 +30,11 @@ const ProjectPage = ({
   postData: postDataProps;
 }) => {
   return (
-    <div className="prose mx-auto">
-      <h1>{frontmatter.title}</h1>
+    <div className="prose mx-auto ">
+      <Link href={"/"}>Back</Link>
+      <h1 className="pt-4">{frontmatter.title}</h1>
       <div
+        className="pb-4"
         dangerouslySetInnerHTML={{
           __html: md().render(content),
         }}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 type cardProps = {
   title: string;
-  author: string;
+  author?: string;
   category: string;
   description: string;
   date: Date;
@@ -25,7 +25,7 @@ export const Card = ({
         <Image
           className="w-full h-full"
           src={bannerImage}
-          alt={"Some alt text"}
+          alt={title}
           height={1080}
           width={720}
         ></Image>
@@ -42,7 +42,6 @@ export const Card = ({
         <p className="text-xs text-justify">
           {new Date(date).toLocaleDateString()}
         </p>
-        <h2 className="text-lg text-justify">{author}</h2>
         <p className="text-sm text-justify">{description}</p>
       </div>
     </div>

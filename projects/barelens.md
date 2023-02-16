@@ -4,7 +4,7 @@ author: "Jonathan D."
 description: "Photography website with a custom CMS to manage client request"
 category: "Client Website"
 date: "2022-03-13"
-bannerImage: "https://via.placeholder.com/1080x720"
+bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg"
 tags:
     - CMS
     - Next.js
@@ -37,7 +37,7 @@ Basically, the site had two goals:
 
 For the first goal, I was inspired to by magazines and photo catalogs. I wanted the clients to quickly see the photographers best pictures and get a feel for their artistic style. With Tailwind I was able to very quickly design the content of the page without a hitch. Although, I used some third party libraries for a few components like the carousel. 
 
-![carousel](image.jpg)
+![carousel](https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg)
 
 As for the second goal, it was important for both me and the photographer that they're able to manage *most* of the content (more on this later..) and all of the upcoming request. So I looked for a CMS that was user friendly but that had robust features. 
 
@@ -45,15 +45,13 @@ This is why I choose Directus, it's open source and plays nice with several data
 
 ## Spotlight
 
-![directus](image.jpg)
+![directus](https://res.cloudinary.com/dhfp2qscl/image/upload/v1676565443/portfolio/directus_zo64c5.jpg)
 
 Directus is definitely a top CMS because of all the feature it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me at least). As I said before, you can use its REST API to pull the all the data that you need (text, images and component pieces) and guard the data you don't want to share publicly. 
 
 The only hiccup came when trying to self-host it. It's not terrible but when I began testing it the documentation was full of different self hosting options. AWS, Digital Ocean, Heroku, anything really but a few days later they took those guides down and they provided only one option...
 
-DOCKER!
-
-![docker](image.jpg)
+![docker](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png)
 
 I had to wrap my head around using Docker, Dockerfiles and docker-compose but I found some great guides on Youtube, plus the docker docs were pretty good. I then created my own docker image of Directus and hosted it on the cloud. 
 
@@ -73,6 +71,6 @@ Tailwind handled most of the design elements but I had to rely on a few third pa
 
 On a technical level, getting familiar with docker and containerized applications was thrilling. The learning curve was a bit steep at first but it made the deployment process for this project a breeze. 
 
-the biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. I believe I built a very simple UI for visitors of the site but my priority was to ensure that the photographer had the ability to view their content, make necessary changes and manage their photoshoot request. Again, I think choosing Directus was perfect for both our needs as it offered so much with minimal setup. 
+The biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. I believe I built a very simple UI for visitors of the site but my priority was to ensure that the photographer had the ability to view their content, make necessary changes and manage their photoshoot request. Again, I think choosing Directus was perfect for both our needs as it offered so much with minimal setup. 
 
 Overall, I had a great time building this project.

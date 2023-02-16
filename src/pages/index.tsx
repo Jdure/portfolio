@@ -1,11 +1,10 @@
-import fs from "fs";
-import matter from "gray-matter";
 import { Hero } from "@/components/Hero";
 import { Contact } from "@/components/Contact";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Card } from "@/components/Card";
 import { Key } from "react";
 import Link from "next/link";
+import { getProjectMetadata } from "lib/helper";
 
 type projectProps = {
   slug: string;
@@ -14,7 +13,7 @@ type projectProps = {
 
 type frontmatterProps = {
   title: string;
-  author: string;
+  author?: string | undefined;
   category: string;
   description: string;
   date: Date;
@@ -41,7 +40,6 @@ export default function Home({
                     tags={item.frontmatter.tags}
                     description={item.frontmatter.description}
                     key={item.slug}
-                    author={item.frontmatter.author}
                     category={item.frontmatter.category}
                     date={item.frontmatter.date}
                   />
@@ -56,19 +54,8 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const files = fs.readdirSync("projects");
-
-  const projects = files.map((fileName) => {
-    const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`projects/${fileName}`, "utf-8");
-    const { data: frontmatter } = matter(readFile);
-
-    return {
-      slug,
-      frontmatter,
-    };
-  });
+export const getStaticProps: GetStaticProps = (context) => {
+  const projects = getProjectMetadata();
 
   return {
     props: {

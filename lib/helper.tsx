@@ -7,7 +7,7 @@ const projectsDir = path.join(process.cwd(), "projects")
 export const getProjectMetadata = () => {
   const files = fs.readdirSync(projectsDir);
 
-  files.map((fileName) => {
+  return files.map((fileName) => {
     const slug = fileName.replace(".md", "");
     const readFile = fs.readFileSync(`projects/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);

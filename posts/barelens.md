@@ -1,7 +1,7 @@
 ---
 title: "Barelens Photography"
 author: "Jonathan D."
-description: "Photography website with an custom CMS to manage client request"
+description: "Photography website with a custom CMS to manage client request"
 category: "Client Website"
 date: "2022-03-13"
 bannerImage: "https://via.placeholder.com/1080x720"
@@ -11,11 +11,11 @@ tags:
     - Tailwind 
 ---
 
-# Introduction
+## Introduction
 
-I had a lot of fun creating with project, I created a custom photography website for a client who wanted a simple minimalist website to display their work, show their service fees and more importantly manage client request. 
+I had a lot of fun creating with project, I created a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and more importantly manage client request. 
 
-I built this website with the following tech stack (skip this if you don't care, I won't judge you :grin:): 
+I built this website with the following tech stack (skip this if you don't care, I won't judge you 😁)
 
     - Next.js 
     - Tailwind
@@ -24,7 +24,7 @@ I built this website with the following tech stack (skip this if you don't care,
     - Azure Storage
     - Docker 
 
-Check out the repos on [Github](https://github.com/Jdure/Barelens) and [Barelens Photography](https://barelens.vercel.app/)'s site.
+**DO** check out the repo on [Github](https://github.com/Jdure/Barelens) and [Barelens Photography](https://barelens.vercel.app/)'s site.
 
 ## Purpose and Goal
 
@@ -55,11 +55,11 @@ DOCKER!
 
 ![docker](image.jpg)
 
-I had to wrap my head around using docker, Dockerfiles and docker-compose but I found some great guides on youtube plus the docker docs were pretty good. I then created my own docker image of Directus and hosted it on the cloud. 
+I had to wrap my head around using Docker, Dockerfiles and docker-compose but I found some great guides on Youtube, plus the docker docs were pretty good. I then created my own docker image of Directus and hosted it on the cloud. 
 
 I can go on and on about Directus but the integration you can achieve with Next.js is great. Things like :
 
-- On-demand Incremental Static Regeneration with Directus Webhooks allowing the photographer to make changes in the backend with Directus and having these changes be reflected on a static website is so satisfying
+- On-demand Incremental Static Regeneration with Directus Webhooks allowing the photographer to make changes in the backend and having these changes be reflected on a static website is so satisfying
 
 - Automated Flows for when a request comes in. In other words, sending confirmation emails to clients and alert messages to the photographer whenever they received a new request 
 
@@ -67,20 +67,14 @@ I can go on and on about Directus but the integration you can achieve with Next.
 
 I can't stress enough how I really enjoyed using this CMS. 
 
+## Lessons Learned
 
 - [] What is the “killer feature” of your project? What feature does it have that took the 
 most work, or was the most technically impressive? Some possible examples: 
-    - [x] User authentication 
-    - [x] A feed of items fetched from a database 
     - [] A particularly tricky UI element (eg. autocomplete, calendar, drag-and-drop) 
-    - [x] Anything you’re proud of! 
     - [] What were the technical hurdles that got in your way? Any major problems you hit 
       during development? 
     - [] How did you solve those problems? What was the solution? Go deep here, and write with a developer in mind. 
-
-## Lessons Learned
-
-
 
 - [] What did you learn doing this project? Feel free to list multiple things. Also feel free to 
 cover non-technical lessons. It’s great to talk about how you learned to use an 

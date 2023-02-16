@@ -30,7 +30,7 @@ const ProjectPage = ({
 }) => {
   return (
     <div className="prose mx-auto">
-      <p>{frontmatter.title}</p>
+      <h1>{frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{
           __html: md().render(content),
@@ -42,7 +42,6 @@ const ProjectPage = ({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllProjectSlugs();
-  console.log(paths);
   return {
     paths,
     fallback: false,

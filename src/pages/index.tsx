@@ -57,7 +57,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const files = fs.readdirSync("posts");
+  const files = fs.readdirSync("projects");
 
   const projects = files.map((fileName) => {
     const slug = fileName.replace(".md", "");

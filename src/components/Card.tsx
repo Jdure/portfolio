@@ -11,7 +11,14 @@ type cardProps = {
   tags: string[];
 };
 
-export const Card = ({ title, bannerImage, tags, description }: cardProps) => {
+export const Card = ({
+  title,
+  author,
+  date,
+  bannerImage,
+  tags,
+  description,
+}: cardProps) => {
   return (
     <div className="card rounded-none w-72 bg-transparent my-4 sm:w-60 lg:w-80 xl:w-96 dark:text-neutral-content">
       <figure className="">
@@ -32,6 +39,10 @@ export const Card = ({ title, bannerImage, tags, description }: cardProps) => {
           ))}
         </div>
         <h3 className="text-xl card-title">{title}</h3>
+        <p className="text-xs text-justify">
+          {new Date(date).toLocaleDateString()}
+        </p>
+        <h2 className="text-lg text-justify">{author}</h2>
         <p className="text-sm text-justify">{description}</p>
       </div>
     </div>

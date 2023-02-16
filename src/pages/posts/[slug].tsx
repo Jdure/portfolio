@@ -1,8 +1,5 @@
-import fs from "fs";
 import md from "markdown-it";
-import matter from "gray-matter";
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import path from "path";
+import { GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { getAllProjectSlugs } from "../../../lib/helper";
 import { getProjectData } from "../../../lib/helper";
@@ -10,6 +7,11 @@ import { getProjectData } from "../../../lib/helper";
 interface Params extends ParsedUrlQuery {
   slug: string;
 }
+
+type postDataProps = {
+  frontmatter: frontmatterProps;
+  content: string;
+};
 
 type frontmatterProps = {
   title: string;
@@ -21,26 +23,34 @@ type frontmatterProps = {
   tags: string[];
 };
 
-const ProjectPage = ({ postData }: any) => {
-  console.log(postData);
+const ProjectPage = ({
+  postData: { frontmatter, content },
+}: {
+  postData: postDataProps;
+}) => {
   return (
     <div className="prose mx-auto">
-      <p>text</p>
-      {/* <div dangerouslySetInnerHTML={{ __html: md().render(content) }} /> */}
+      <p>{frontmatter.title}</p>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: md().render(content),
+        }}
+      />
     </div>
   );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllProjectSlugs()
+  const paths = getAllProjectSlugs();
+  console.log(paths);
   return {
     paths,
     fallback: false,
   };
 };
 
-export async function getStaticProps({ params }: { params: Params }) {
-  const postData = await getProjectData(params?.slug);
+export function getStaticProps({ params }: { params: Params }) {
+  const postData = getProjectData(params?.slug);
   return {
     props: {
       postData,
@@ -49,6 +59,5 @@ export async function getStaticProps({ params }: { params: Params }) {
 }
 
 export default ProjectPage;
-
 
 // Error: ENOENT: no such file or directory, open '/workspaces/portfolio/projects/example-post-2.md'

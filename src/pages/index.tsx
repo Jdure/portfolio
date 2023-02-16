@@ -25,8 +25,6 @@ type frontmatterProps = {
 export default function Home({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const items = 3;
-
   return (
     <>
       <Hero />
@@ -42,7 +40,10 @@ export default function Home({
                     bannerImage={item.frontmatter.bannerImage}
                     tags={item.frontmatter.tags}
                     description={item.frontmatter.description}
-                    key={idx}
+                    key={item.slug}
+                    author={item.frontmatter.author}
+                    category={item.frontmatter.category}
+                    date={item.frontmatter.date}
                   />
                 </Link>
               </>

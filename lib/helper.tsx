@@ -4,6 +4,21 @@ import matter from "gray-matter"
 
 const projectsDir = path.join(process.cwd(), "posts")
 
+export const getProjectMetadata = () => {
+  const files = fs.readdirSync(projectsDir);
+
+  files.map((fileName) => {
+    const slug = fileName.replace(".md", "");
+    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+};
+
 export const getAllProjectSlugs = () => {
   const fileNames = fs.readdirSync(projectsDir);
   return fileNames.map((fileName) => {
@@ -16,14 +31,13 @@ export const getAllProjectSlugs = () => {
 };
 
 export function getProjectData(slug: string) {
-  const fullPath = path.resolve("./posts", `${slug}.md`);
+  const fullPath = path.resolve(projectsDir, `${slug}.md`);
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  console.log(fileContents);
-  const matterResult = matter(fileContents);
 
+  const { data: frontmatter, content } = matter(fileContents);
   return {
-    slug,
-    ...matterResult.data,
+    frontmatter,
+    content,
   };
 }

@@ -13,7 +13,7 @@ module.exports = {
       body: ["Nunito Sans", "sans-serif"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
   daisyui: {
     themes: ["emerald", "business"],
   },

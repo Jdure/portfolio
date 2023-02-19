@@ -3,7 +3,7 @@ title: "Barelens Photography"
 author: "Jonathan D."
 description: "Photography website with a custom CMS to manage client request"
 category: "Client Website"
-date: "2022-03-13"
+date: "2023-02-12"
 bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg"
 tags:
     - CMS
@@ -41,7 +41,7 @@ For the first goal, I was inspired to by magazines and photo catalogs. I wanted 
 
 As for the second goal, it was important for both me and the photographer that they're able to manage *most* of the content (more on this later..) and all of the upcoming request. So I looked for a CMS that was user friendly but that had robust features. 
 
-This is why I choose Directus, it's open source and plays nice with several databases creating either a REST of GraphQL API and it comes with roles, permissions, webhooks and flows that can be trigger by different events in the database.  
+This is why I choose Directus, it's open source, it plays nice with several databases, it generates either a REST of GraphQL API and it comes with very good features out of the box. Like roles, permissions, webhooks and flows that can be trigger by different events in the database.  
 
 ## Spotlight
 

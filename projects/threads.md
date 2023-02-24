@@ -2,7 +2,7 @@
 title: "Nouveau Threads "
 author: "Jonathan D."
 description: "An accessible Shopify store built with Next.js"
-category: "example"
+category: "Demo"
 date: "2023-02-24"
 bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1677269910/Nouveau-Threads.png"
 tags:

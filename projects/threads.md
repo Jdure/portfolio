@@ -1,23 +1,21 @@
 ---
-title: "This is an example post"
+title: "Nouveau Threads "
 author: "Jonathan D."
-description: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+description: "An accessible Shopify store built with Next.js"
 category: "example"
-date: "2022-03-13"
-bannerImage: "https://via.placeholder.com/1080x720"
+date: "2023-02-24"
+bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1677269910/Nouveau-Threads.png"
 tags:
-    - example
+    - Next.js
+    - Tailwind 
+    - Shopify
 ---
 
 ## Introduction
 
+Nouveau threads is an e-commerce site I built with Next.js, Tailwind, and Shopify's Storefront API. The site has been designed to offer accessibility and ease of navigation, with an emphasis on mobile responsiveness. While the Shopify backend makes inventory and payment management a cinch. I created this site as a starting point for upcoming e-commerce projects that I'll be building in the future.
 
-[] High-level summary of what the project is 
-[] List of core functionalities / interesting features 
-[] Your role in the project. were you exclusively doing development, or did you do 
-[] design? If you worked in groups, what parts did you tackle? 
-[] Technologies used 
-[] Links to live demo + source code (if applicable)
+Checkout the [Github repo](https://github.com/Jdure/nouveau-threads) and the [Nouveau threads](https://nouveau-threads.vercel.app/).
 
 ## Purpose and Goal
 

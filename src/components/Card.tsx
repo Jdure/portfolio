@@ -23,7 +23,7 @@ export const Card = ({
     <div className="card rounded-none w-72 bg-transparent my-4 sm:w-60 lg:w-80 xl:w-96 dark:text-neutral-content">
       <figure className="">
         <Image
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           src={bannerImage}
           alt={title}
           height={1080}

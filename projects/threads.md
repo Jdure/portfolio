@@ -19,10 +19,12 @@ Checkout the [Github repo](https://github.com/Jdure/nouveau-threads) and the [No
 
 ## Purpose and Goal
 
-[] Why did you build this project? Why is it important to you? 
-[] What was the expected outcome of the project? 
-[] What were the initial designs?
-[] Any other preliminary planning that you did which helps build a narrative
+I built this project because I wanted to create a foundation for future e-commerce sites that I plan on building. This site will serve as a solid base for me to build upon, enabling me to focus on the specifics of each new project rather than starting from scratch each time. I believe, using Next.js, Tailwind, and Shopify Storefront API is a winning combination.
+
+My goal with this project was to create an e-commerce site that was easy to use and provided an exceptional shopping experience. To achieve this, I designed the site with accessibility and mobile responsiveness in mind. For accessability, I followed the [a11y checklist](https://www.a11yproject.com/checklist/) along with [Google's Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). For mobile responsiveness I used a Tailwind library called [DaisyUI](https://daisyui.com/) to quickly design UI components. Although there are some quirks with this component library.
+
+- [] What were the initial designs?
+- [] Any other preliminary planning that you did which helps build a narrative
 
 ## Spotlight
 
@@ -35,13 +37,6 @@ most work, or was the most technically impressive? Some possible examples:
     [] What were the technical hurdles that got in your way? Any major problems you hit 
       during development? 
     [] How did you solve those problems? What was the solution? Go deep here, and write with a developer in mind. 
-
-## Current status
-
-[] This section is optional. If the project is actively being used by real people, talk a little 
-bit about the current status, who uses it, why they use it, what they say to you about  
-it, stuff like that.    
- [] If the project was contrived specifically for the portfolio, omit this section. 
 
 ## Lessons Learned
 [] What did you learn doing this project? Feel free to list multiple things. Also feel free to 

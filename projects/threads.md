@@ -28,6 +28,10 @@ My goal with this project was to create an e-commerce site that was easy to use 
 
 ## Spotlight
 
+My custom e-commerce site is its seamless integration of Shopify's storefront GraphQL API on the backend with Next.js and Tailwind on the frontend. 
+This integration allows for efficient and fast fetching and updating of inventory data, processing of payments, and easy customization and styling of the website's frontend. 
+The result is a highly performant, accessible, and SEO-friendly e-commerce site that delivers a fast, efficient, and user-friendly experience.
+
 [] What is the “killer feature” of your project? What feature does it have that took the 
 most work, or was the most technically impressive? Some possible examples: 
     [] User authentication 

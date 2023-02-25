@@ -1,8 +1,10 @@
 import React, { Key } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type cardProps = {
   title: string;
+  slug: string;
   author?: string;
   category: string;
   description: string;
@@ -11,39 +13,33 @@ type cardProps = {
   tags: string[];
 };
 
+
 export const Card = ({
   title,
-  author,
   date,
   bannerImage,
-  tags,
   description,
+  slug,
 }: cardProps) => {
   return (
-    <div className="card rounded-none w-72 bg-transparent my-4 sm:w-60 lg:w-80 xl:w-96 dark:text-neutral-content">
-      <figure className="">
+    <div className="sm:w-1/2 mb-10 px-4">
+      <div className="rounded-lg h-64 overflow-hidden">
         <Image
-          className="w-full h-full object-cover"
+          alt="content"
+          className="object-cover object-top h-full w-full hover:object-center transform duration-500 inset-y-full hover:inset-y-0"
           src={bannerImage}
-          alt={title}
-          height={1080}
-          width={720}
-        ></Image>
-      </figure>
-      <div className="card-body">
-        <div className="card-actions justify-start">
-          {tags.map((tag, idx: Key) => (
-            <div key={idx} className="badge badge-outline">
-              {tag}
-            </div>
-          ))}
-        </div>
-        <h3 className="text-xl card-title">{title}</h3>
-        <p className="text-xs text-justify">
-          {new Date(date).toLocaleDateString()}
-        </p>
-        <p className="text-sm text-justify">{description}</p>
+          height={501}
+          width={1201}
+        />
       </div>
+      <h2 className="title-font text-2xl font-medium mt-6 mb-3">{title}</h2>
+      <p className="text-xs leading-relaxed">
+        {new Date(date).toLocaleDateString()}
+      </p>
+      <p className="leading-relaxed text-base">{description}</p>
+      <button className="flex mt-6 border-0 py-2 px-2 btn btn-link text-neutral dark:text-white hover:animate-pulse">
+        <Link href={`/projects/${slug}`}>Find out more &rarr;</Link>
+      </button>
     </div>
   );
 };

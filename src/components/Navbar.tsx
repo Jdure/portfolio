@@ -45,26 +45,26 @@ export const Navbar = () => {
           </svg>
         </label>
         <ul className="dropdown-content menu pt-2 shadow bg-base-100 w-36 mt-2 text-right">
-          <Link className="p-2" href="#about">
+          <Link className="p-2" href="/#about">
             About
           </Link>
-          <Link className="p-2" href="#projects">
+          <Link className="p-2" href="/#projects">
             Projects
           </Link>
-          <Link className="p-2" href="#contact">
+          <Link className="p-2" href="/#contact">
             Contact
           </Link>
         </ul>
       </div>
       {/* Desktop Menu */}
       <div className="navbar-end hidden sm:flex sm:w-auto">
-        <Link className="p-2" href="#about">
+        <Link className="p-2" href="/#about">
           About
         </Link>
-        <Link className="p-2" href="#projects">
+        <Link className="p-2" href="/#projects">
           Projects
         </Link>
-        <Link className="p-2" href="#contact">
+        <Link className="p-2" href="/#contact">
           Contact
         </Link>
       </div>

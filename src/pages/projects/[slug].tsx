@@ -31,7 +31,7 @@ const ProjectPage = ({
 }) => {
   return (
     <div className="prose mx-auto ">
-      <Link href={"/"}>Back</Link>
+      <Link href={"/"}>&larr; Back</Link>
       <h1 className="pt-4">{frontmatter.title}</h1>
       <div
         className="pb-4"

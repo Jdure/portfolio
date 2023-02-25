@@ -1,7 +1,7 @@
 ---
 title: "Barelens Photography"
 author: "Jonathan D."
-description: "Photography website with a custom CMS to manage client request"
+description: "CosPhotography website with a custom CMS to manage client request"
 category: "Client Website"
 date: "2023-02-12"
 bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg"

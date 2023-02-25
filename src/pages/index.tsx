@@ -2,8 +2,6 @@ import { Hero } from "@/components/Hero";
 import { Contact } from "@/components/Contact";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Card } from "@/components/Card";
-import { Key } from "react";
-import Link from "next/link";
 import { getProjectMetadata } from "lib/helper";
 
 type projectProps = {
@@ -27,23 +25,25 @@ export default function Home({
   return (
     <>
       <Hero />
-      <div className="flex flex-col justify-center items-center py-10">
-        <h2 className="text-3xl sm:mx-24">Latest projects</h2>
-        <div id="projects" className="flex flex-col items-center">
-          <div className="sm:flex sm:flex-row sm:flex-wrap sm:space-x-4">
-            {projects.map((item: projectProps, idx: Key) => (
+
+      <div className="text-neutral dark:text-white body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <h2 id="projects" className="text-3xl text-center py-8">
+            Latest projects
+          </h2>
+          <div className="flex flex-wrap -mx-4 -mb-10 text-center sm:text-justify">
+            {projects.map((item: projectProps) => (
               <>
-                <Link key={item.slug} href={`/projects/${item.slug}`}>
-                  <Card
-                    title={item.frontmatter.title}
-                    bannerImage={item.frontmatter.bannerImage}
-                    tags={item.frontmatter.tags}
-                    description={item.frontmatter.description}
-                    key={item.slug}
-                    category={item.frontmatter.category}
-                    date={item.frontmatter.date}
-                  />
-                </Link>
+                <Card
+                  title={item.frontmatter.title}
+                  bannerImage={item.frontmatter.bannerImage}
+                  tags={item.frontmatter.tags}
+                  description={item.frontmatter.description}
+                  key={item.slug}
+                  category={item.frontmatter.category}
+                  date={item.frontmatter.date}
+                  slug={item.slug}
+                />
               </>
             ))}
           </div>

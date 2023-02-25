@@ -23,33 +23,32 @@ I built this project because I wanted to create a foundation for future e-commer
 
 My goal with this project was to create an e-commerce site that was easy to use and provided an exceptional shopping experience. To achieve this, I designed the site with accessibility and mobile responsiveness in mind. For accessability, I followed the [a11y checklist](https://www.a11yproject.com/checklist/) along with [Google's Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). For mobile responsiveness I used a Tailwind library called [DaisyUI](https://daisyui.com/) to quickly design UI components. Although there are some quirks with this component library.
 
-- [] What were the initial designs?
-- [] Any other preliminary planning that you did which helps build a narrative
-
 ## Spotlight
 
-My custom e-commerce site is a seamless integration of Shopify's storefront GraphQL API on the backend with Next.js and Tailwind on the frontend. 
-This integration allows for efficient and fast fetching and updating of inventory data, processing of payments, and easy customization and styling of the website's frontend. 
-The result is a highly performant, accessible, and SEO-friendly e-commerce site that delivers a fast, efficient, and user-friendly experience.
+During the development of my this e-commerce site, I faced a few technical hurdles. 
 
-[] What is the “killer feature” of your project? What feature does it have that took the 
-most work, or was the most technically impressive? Some possible examples: 
-    [] User authentication 
-    [] A feed of items fetched from a database 
-    [] A particularly tricky UI element (eg. autocomplete, calendar, drag-and-drop) 
-    [] Anything you’re proud of! 
-    [] What were the technical hurdles that got in your way? Any major problems you hit 
-      during development? 
-    [] How did you solve those problems? What was the solution? Go deep here, and write with a developer in mind. 
+One significant issue I encountered was related to the third-party library DaisyUI, which provided excellent components for the site's frontend. 
+
+However, I noticed that most of the color schemes used by DaisyUI were not accessible, which could potentially impact the site's accessibility score.
+
+To solve this problem, I researched accessible color schemes and found an array of accessible colors that I could use instead. 
+
+Since DaisyUI is an extension of Tailwind, I was able to integrate these accessible colors easily into my project. 
+
+By making this small change, I was able to ensure that the site was highly accessible while still utilizing the benefits of DaisyUI's excellent components. 
+
+Overall, this solution allowed me to maintain the site's accessibility score of 100 while still providing a visually appealing and user-friendly experience for all users. 
 
 ## Lessons Learned
-[] What did you learn doing this project? Feel free to list multiple things. Also feel free to 
-cover non-technical lessons. It’s great to talk about how you learned to use an 
-advanced feature of a framework or library, but it’s just as valuable to talk about 
-project-management experience, or things you learned about shipping projects. 
-[] If you used a framework or other libraries/tools, was it a good choice? How did it 
-help? In which ways was it insufficient? 
-[] Is your project accessible? What did you learn about accessibility, while building this 
-project? Describing how you tested your project using keyboard navigation or a screen reader can make for a really compelling story! 
-[] How has this affected the work you’ve done since then? Real examples of how this 
-project built your knowledge for future projects is fantastic.
+
+I learned to manage different tools and libraries. 
+
+I used react-query for data fetching, which had many benefits when fetching data client-side. 
+
+At times, I found that it was insufficient in inferring GraphQL types when using TypeScript, which made the development process more challenging.
+
+In addition, I used Shopify's GraphQL API for inventory data fetching, and while it provided excellent functionality, there were some minor inconsistencies that could be improved. 
+
+I wish that Shopify had a proper JavaScript SDK for inventory management, which would make the integration even smoother.
+
+One of my main goals for the project was to make it as accessible as possible. I learned a lot about accessibility during the development process and made sure to prioritize it throughout the project. While no site can be 100% accessible, I am glad that I made a strong effort to make it as accessible as possible from the start. Overall, the project taught me a lot about using various tools and libraries, as well as the importance of prioritizing accessibility in web development.

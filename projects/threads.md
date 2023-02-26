@@ -49,7 +49,7 @@ Since DaisyUI is an extension of Tailwind, I was able to integrate these accessi
 
 Overall, this solution allowed me to maintain the site's accessibility score of 100 while still providing a visually appealing and user-friendly experience for all users. 
 
-## Lessons Learned
+## Wrap up
 
 I learned to manage different tools and libraries. I used react-query for data fetching, which had many benefits when fetching data client-side. 
 

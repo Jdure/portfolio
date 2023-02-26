@@ -71,7 +71,7 @@ I can go on and on about Directus but the integration you can achieve with Next.
 
 I can't stress enough how I really enjoyed using this CMS. 
 
-Tailwind handled most of the design elements but I had to rely on a few third party libraries for certain use cases. For example the request form needed to allow clients to select specific dates and time while the UI needed to omit timeslots that were no longer available. This was bit challenging since the html date-time input didn't have enough attributes to do this dynamically with out large chunks of code, so I opted for a third-party library react-datetime and it worked flawlessly. It allowed me to omit both dates and time slots while  
+Tailwind handled most of the design elements but I had to rely on a few third party libraries for certain use cases. For example the request form needed to allow clients to select specific dates and time while the UI needed to omit timeslots that were no longer available. This was bit challenging since the html date-time input didn't have enough attributes to do this dynamically with out large chunks of code, so I opted for a third-party library react-datetime and it worked flawlessly. It allowed me to omit both dates and timeslots while staying true to the overal design of the site.
 
 ## Wrap up
 

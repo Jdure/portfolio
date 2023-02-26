@@ -79,4 +79,4 @@ On a technical level, getting familiar with docker and containerized application
 
 The biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. I believe I built a very simple UI for visitors of the site but my priority was to ensure that the photographer had the ability to view their content, make necessary changes and manage their photoshoot request. Again, I think choosing Directus was perfect for both our needs as it offered so much with minimal setup. 
 
-Overall, I had a great time building this project.
+I had a great time building this project.

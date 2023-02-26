@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-I had a lot of fun creating with project, I created a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and more importantly manage client request. 
+I had a lot of fun creating this project. I made a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and, more importantly, manage client requests.
 
 I built this website with the following Tech Stack (**skip** this if you don't care, I won't judge you 😁)
 
@@ -30,53 +30,53 @@ I built this website with the following Tech Stack (**skip** this if you don't c
     </tr>
 </table>
 
-**DO** check out the repo on [Github](https://github.com/Jdure/Barelens) and the [Barelens Photography](https://barelens.vercel.app/)'s site.
+**Do** check out the repo on [Github](https://github.com/Jdure/Barelens) and [Barelens Photography](https://barelens.vercel.app/)'s site.
 
 ## Purpose and Goal
 
-The photographer wanted a minimalist website that allowed their clients to view their service and schedule photoshoots. 
+The photographer wanted a minimalist website allowing clients to view their service and schedule photoshoots.
 
 Basically, the site had two goals:
 
-1. Provide clients a look at the photographers work
-2. Allow clients to send request to the photographer
+1. Provide clients with a look at the photographer's work
+2. Allow clients to send a request to the photographer
 
-For the first goal, I was inspired to by magazines and photo catalogs. I wanted the clients to quickly see the photographers best pictures and get a feel for their artistic style. With Tailwind I was able to very quickly design the content of the page without a hitch. Although, I used some third party libraries for a few components like the carousel. 
+For the first goal, I was inspired by magazines and photo catalogues. I wanted the clients to see the photographer's best pictures quickly and get a feel for their artistic style. With Tailwind, I could design the page's content without a hitch. Although, I used some third-party libraries for a few components, like the carousel.
 
 ![carousel](https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg)
 
-As for the second goal, it was important for both me and the photographer that they're able to manage *most* of the content (more on this later..) and all of the upcoming request. So I looked for a CMS that was user friendly but that had robust features. 
+As for the second goal, it was important for both the photographer and me that they're able to manage most of the content (more on this later…) and all of the upcoming requests. So I looked for a user-friendly CMS that had robust features.
 
-This is why I choose Directus, it's open source, it plays nice with several databases, it generates either a REST of GraphQL API and it comes with very good features out of the box. Like roles, permissions, webhooks and flows that can be trigger by different events in the database.  
+I choose Directus; it's open source, plays nice with several databases, generates either a REST or GraphQL API and comes with excellent features out of the box, like roles, permissions, webhooks and flows that can be triggered by different events in the database.
 
 ## Spotlight
 
 ![directus](https://res.cloudinary.com/dhfp2qscl/image/upload/v1676565443/portfolio/directus_zo64c5.jpg)
 
-Directus is definitely a top CMS because of all the feature it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me at least). As I said before, you can use its REST API to pull the all the data that you need (text, images and component pieces) and guard the data you don't want to share publicly. 
+Directus is definitely a top CMS because of all the features it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me, at least). As I said, you can use its REST API to pull all the data you need (text, images and component pieces) and guard the data you don't want to share publicly.
 
-The only hiccup came when trying to self-host it. It's not terrible but when I began testing it the documentation was full of different self hosting options. AWS, Digital Ocean, Heroku, anything really but a few days later they took those guides down and they provided only one option...
+The only hiccup came when trying to self-host it. When I began testing it,  the documentation contained different self-hosting alternatives like AWS, Digital Ocean, Heroku, and others. Yet, a few days later, they took those guides down and provided only one option…
 
 ![docker](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png)
 
-I had to wrap my head around using Docker, Dockerfiles and docker-compose but I found some great guides on Youtube, plus the docker docs were pretty good. I then created my own docker image of Directus and hosted it on the cloud. 
+I had to wrap my head around using Docker, Dockerfiles and docker-compose. Still, I found some excellent guides on Youtube, and the Docker docs were pretty good. I then created my Docker image of Directus and hosted it on the cloud. 
 
-I can go on and on about Directus but the integration you can achieve with Next.js is great. Things like :
+I can go on and on about Directus, but the integration you can achieve with Next.js is incredible. Things like :
 
-- On-demand Incremental Static Regeneration with Directus Webhooks allowing the photographer to make changes in the backend and having these changes be reflected on a static website is so satisfying
+- On-Demand Incremental Static Regeneration with Directus Webhooks allows the photographer to make changes that get pushed immediately on the website.
 
-- Automated Flows for when a request comes in. In other words, sending confirmation emails to clients and alert messages to the photographer whenever they received a new request 
+- Automated Flows for when a request comes in. In other words, sending confirmation emails to clients and alert messages to the photographer whenever they receive a new request.
 
-- Role base permissions and API route protection, so that the database isn't vulnerable to certain attacks 
+- Role base permissions and API route protection so that the database isn't vulnerable to specific attacks
 
-I can't stress enough how I really enjoyed using this CMS. 
+I can't stress enough how I really enjoyed using this CMS.
 
-Tailwind handled most of the design elements but I had to rely on a few third party libraries for certain use cases. For example the request form needed to allow clients to select specific dates and time while the UI needed to omit timeslots that were no longer available. This was bit challenging since the html date-time input didn't have enough attributes to do this dynamically with out large chunks of code, so I opted for a third-party library react-datetime and it worked flawlessly. It allowed me to omit both dates and timeslots while staying true to the overal design of the site.
+Tailwind handled most design elements, but I had to rely on a few third-party libraries for specific use cases. For example, the request form required clients to select specific dates and times. In contrast, the UI had to reflect the database and omit timeslots that were no longer available. This was challenging since the HTML date-time input needed more attributes to do this dynamically without large chunks of code, so I opted for a third-party library named react-datetime. It worked flawlessly. It allowed me to omit dates and timeslots while staying true to the site's overall design.
 
 ## Wrap up
 
-On a technical level, getting familiar with docker and containerized applications was thrilling. The learning curve was a bit steep at first but it made the deployment process for this project a breeze. 
+On a technical level, getting familiar with Docker and containerized applications was thrilling. The learning curve was steep at first, but it made the deployment process for this project a breeze.
 
-The biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. I believe I built a very simple UI for visitors of the site but my priority was to ensure that the photographer had the ability to view their content, make necessary changes and manage their photoshoot request. Again, I think choosing Directus was perfect for both our needs as it offered so much with minimal setup. 
+The biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. The UI is simple for site visitors, but my priority was ensuring the photographer could view their content, make necessary changes and manage their photoshoot requests. Again, Directus was perfect for our needs as it offered so much with minimal setup.
 
-I had a great time building this project.
+I had an excellent time building this project.

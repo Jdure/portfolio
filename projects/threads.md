@@ -9,19 +9,30 @@ tags:
     - Next.js
     - Tailwind 
     - Shopify
+    - E-commerce
 ---
 
-## Introduction
+## Overview
 
-Nouveau threads is an e-commerce site I built with Next.js, Tailwind, and Shopify's Storefront API. The site has been designed to offer accessibility and ease of navigation, with an emphasis on mobile responsiveness. While the Shopify backend makes inventory and payment management a cinch. I created this site as a starting point for upcoming e-commerce projects that I'll be building in the future.
+Nouveau threads is an e-commerce site I built with Next.js, Tailwind, and Shopify's Storefront API. I built this site to offer an accessible site with easy navigation, with an emphasis on desktop and mobile responsiveness. The Shopify backend makes inventory and payment management a cinch. This site is a starting point for upcoming e-commerce projects that I'll be building in the future. 
 
-Checkout the [Github repo](https://github.com/Jdure/nouveau-threads) and the [Nouveau threads](https://nouveau-threads.vercel.app/).
+Here is the tech stack that I used :
+
+<table style="background-color:snow;">
+  <tr>
+    <td align="center" valign="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img style="padding-bottom:2.5em;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/2560px-Shopify_logo_2018.svg.png" width="100" height="100"/></td>
+    </tr>
+</table>
+
+Be sure to checkout the [Github repo](https://github.com/Jdure/nouveau-threads) and the [Nouveau threads](https://nouveau-threads.vercel.app/).
 
 ## Purpose and Goal
 
 ![Cart](https://res.cloudinary.com/dhfp2qscl/image/upload/v1677345735/Screen_Shot_2023-02-25_at_12.18.18_PM_rvnjcr.png)
 
-I built this project because I wanted to create a foundation for future e-commerce sites that I plan on building. This site will serve as a solid base for me to build upon, enabling me to focus on the specifics of each new project rather than starting from scratch each time. I believe, using Next.js, Tailwind, and Shopify Storefront API is a winning combination.
+I built this project because I wanted to create a foundation for future e-commerce sites that I plan on building. This site will serve as a solid base for me to build upon, enabling me to focus on the specifics of each new project rather than starting from scratch each time. I believe, using Next.js, Tailwind, and Shopify Storefront API is a winning combination 🚀.
 
 
 My goal with this project was to create an e-commerce site that was easy to use and provided an exceptional shopping experience. To achieve this, I designed the site with accessibility and mobile responsiveness in mind. For accessability, I followed the [a11y checklist](https://www.a11yproject.com/checklist/) along with [Google's Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). For mobile responsiveness I used a Tailwind library called [DaisyUI](https://daisyui.com/) to quickly design UI components. Although there are some quirks with this component library.

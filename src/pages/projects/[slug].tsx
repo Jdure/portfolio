@@ -30,13 +30,17 @@ const ProjectPage = ({
   postData: postDataProps;
 }) => {
   return (
-    <div className="prose mx-auto ">
+    <div className="prose mx-auto dark:prose-invert">
       <Link href={"/"}>&larr; Back</Link>
       <h1 className="pt-4">{frontmatter.title}</h1>
       <div
         className="pb-4"
         dangerouslySetInnerHTML={{
-          __html: md().render(content),
+          __html: md({
+            html: true,
+            linkify: true,
+            typographer: true,
+          }).render(content),
         }}
       />
     </div>

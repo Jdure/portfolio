@@ -18,12 +18,12 @@ export const Hero = () => {
             , based in Canada 🇨🇦
           </p>
           <p className="text-lg text-center w-3/4 sm:text-xl sm:mx-24 sm:w-2/3 sm:text-justify">
-            I&apos;ve pursued my passion for web development since 2016. Since
-            then, I&apos;ve honed my skills and created easy to use web
+            In 2016, I&apos;ve pursued my passion for web development. Ever
+            since then, I&apos;ve honed my skills and created easy to use web
             applications
           </p>
           <p className="text-lg text-center w-2/3 font-semibold sm:text-xl sm:mx-24 sm:w-1/2 sm:text-justify">
-            Feel free to get in touch!
+            Let&apos;s work together!
           </p>
           <div className="flex flex-row sm:mx-24 space-x-6 sm:space-x-4">
             <RxGithubLogo className="text-lg" />

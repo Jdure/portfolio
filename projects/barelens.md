@@ -1,7 +1,7 @@
 ---
 title: "Barelens Photography"
 author: "Jonathan D."
-description: "CosPhotography website with a custom CMS to manage client request"
+description: "Photography website with a custom CMS to manage client request"
 category: "Client Website"
 date: "2023-02-12"
 bannerImage: "https://res.cloudinary.com/dhfp2qscl/image/upload/v1676564609/portfolio/barelens_banner_t66qp8.jpg"
@@ -11,20 +11,26 @@ tags:
     - Tailwind 
 ---
 
-## Introduction
+## Overview
 
 I had a lot of fun creating with project, I created a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and more importantly manage client request. 
 
-I built this website with the following tech stack (**skip** this if you don't care, I won't judge you 😁)
+I built this website with the following Tech Stack (**skip** this if you don't care, I won't judge you 😁)
 
-    - Next.js 
-    - Tailwind
-    - Postgres (Supabase)
-    - Directus CMS
-    - Azure Storage
-    - Docker 
+<table style="background-color:snow;">
+  <tr>
+    <td align="center" valign="center"><img alt="Logo for Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img alt="Logo for Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img alt="Logo for PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="100" height="100"/></td>
+    </tr>
+    <tr>
+    <td align="center" valign="center"><img alt="Logo for Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img alt="Logo for Azure" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" width="100" height="100"/></td>
+    <td align="center" valign="center"><img alt="Logo for Directus CMS" src="https://user-images.githubusercontent.com/522079/43096167-3a1b1118-8e86-11e8-9fb2-7b4e3b1368bc.png" width="100" height="100"/></td>
+    </tr>
+</table>
 
-**DO** check out the repo on [Github](https://github.com/Jdure/Barelens) and [Barelens Photography](https://barelens.vercel.app/)'s site.
+**DO** check out the repo on [Github](https://github.com/Jdure/Barelens) and the [Barelens Photography](https://barelens.vercel.app/)'s site.
 
 ## Purpose and Goal
 

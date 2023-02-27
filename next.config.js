@@ -5,7 +5,6 @@ const nextConfig = {
     domains: ["source.unsplash.com", "cdn.jsdelivr.net", "res.cloudinary.com"],
   },
   output: "standalone",
-  basePath: "/portfolio",
 };
 
 module.exports = nextConfig

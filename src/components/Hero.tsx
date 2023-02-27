@@ -39,7 +39,7 @@ export const Hero = () => {
         <div className="flex flex-row sm:basis-2/5">
           <Image
             className="w-80 sm:w-full"
-            src="portfolio/avatar.svg"
+            src="https://jdure.github.io/portfolio/avatar.svg"
             alt={"DrawKit Avatar"}
             width={1080}
             height={720}

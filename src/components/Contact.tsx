@@ -9,12 +9,12 @@ export const Contact = () => {
     >
       <h1 className="text-3xl sm:mx-24">Contact</h1>
       <div className="flex flex-col items-center text-xl sm:text-lg">
-        <p>Have a project and need a developer? </p>
+        <p>Have a project and need a developer ? </p>
         <p>
           Send me an {""}
           <a
             className="text-info font-semibold hover:text-secondary-focus"
-            href="mailto:name@email.com"
+            href="mailto:jonathan@codebyjd.com"
           >
             email
           </a>

@@ -30,7 +30,7 @@ const ProjectPage = ({
   postData: postDataProps;
 }) => {
   return (
-    <div className="prose mx-auto w-5/6 sm:w-screen prose-sm md:prose-lg lg:prose-xl">
+    <div className="prose mx-auto w-5/6 sm:w-screen prose-base md:prose-lg lg:prose-xl">
       <Link href={"/"}>&larr; Back</Link>
       <h1 className="pt-4">{frontmatter.title}</h1>
       <div

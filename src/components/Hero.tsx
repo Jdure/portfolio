@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -26,8 +27,13 @@ export const Hero = () => {
             Let&apos;s work together!
           </p>
           <div className="flex flex-row sm:mx-24 space-x-6 sm:space-x-4">
-            <RxGithubLogo className="text-lg" />
-            <RxLinkedinLogo className="text-lg" />
+            <Link href={"https://github.com/Jdure"}>
+              {" "}
+              <RxGithubLogo className="text-lg" />
+            </Link>
+            <Link href={"https://ca.linkedin.com/in/jonathan-dure"}>
+              <RxLinkedinLogo className="text-lg" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-row sm:basis-2/5">

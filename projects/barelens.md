@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-I had a lot of fun creating this project. I made a custom photography website for a photographer who wanted a simple minimalist website to display their work, show their service fees and, more importantly, manage client requests.
+I had a lot of fun creating this project. I made a custom photography portfolio for a photographer who wanted a simple minimalist website to display their work, show their service fees and, more importantly, manage client requests.
 
 I built this website with the following Tech Stack (**skip** this if you don't care, I won't judge you 😁)
 
@@ -55,7 +55,7 @@ I choose Directus; it's open source, plays nice with several databases, generate
 
 Directus is definitely a top CMS because of all the features it comes with out of the box (email, role base authentication, webhooks), plus it's visually pleasing (to me, at least). As I said, you can use its REST API to pull all the data you need (text, images and component pieces) and guard the data you don't want to share publicly.
 
-The only hiccup came when trying to self-host it. When I began testing it,  the documentation contained different self-hosting alternatives like AWS, Digital Ocean, Heroku, and others. Yet, a few days later, they took those guides down and provided only one option…
+The only hiccup came when trying to self-host it. When I began testing it,  the documentation contained different self-hosting alternatives like AWS, Digital Ocean, Heroku, etc. Yet, a few days later, they took those guides down and provided only one option…
 
 ![docker](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png)
 
@@ -75,8 +75,8 @@ Tailwind handled most design elements, but I had to rely on a few third-party li
 
 ## Wrap up
 
-On a technical level, getting familiar with Docker and containerized applications was thrilling. The learning curve was steep at first, but it made the deployment process for this project a breeze.
+Getting familiar with Docker and containerized applications were thrilling on a technical level. The learning curve was steep at first, but it made the deployment process for this project a breeze.
 
-The biggest challenge that I faced was putting myself in the photographer's shoes and building an application that was easy to manage for them. The UI is simple for site visitors, but my priority was ensuring the photographer could view their content, make necessary changes and manage their photoshoot requests. Again, Directus was perfect for our needs as it offered so much with minimal setup.
+The biggest challenge that I faced was putting myself in the photographer’s shoes and building an application that was easy to manage for them. The UI is simple for site visitors, but my priority was ensuring the photographer could view their content, make necessary changes and manage their photoshoot requests. Again, Directus was perfect for our needs as it offered so much with minimal setup.
 
 I had an excellent time building this project.

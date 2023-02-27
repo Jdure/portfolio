@@ -6,11 +6,14 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col justify-between items-center sm:flex-row"
+      className="flex flex-col pt-10 justify-between items-center sm:flex-row"
     >
       <h1 className="text-3xl sm:mx-24">Contact</h1>
       <div className="flex flex-col items-center text-xl sm:text-lg">
-        <p>Have a project and need a developer ? </p>
+        <p className="text-xl font-semibold">
+          I am always open to new opportunities
+        </p>
+        <p>Have a project and need a developer? </p>
         <p>
           Send me an {""}
           <a

@@ -26,7 +26,7 @@ export default function Home({
     <>
       <Hero />
       <div className="text-neutral dark:text-white body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-8 sm:py-20 mx-auto">
           <h2 id="projects" className="text-3xl text-center py-8">
             Latest projects
           </h2>

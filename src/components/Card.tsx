@@ -37,7 +37,7 @@ export const Card = ({
         {new Date(date).toLocaleDateString()}
       </p>
       <p className="leading-relaxed text-base">{description}</p>
-      <button className="flex mt-6 border-0 py-2 px-2 btn btn-link text-neutral dark:text-white hover:animate-pulse">
+      <button className="flex mt-6 border-0 py-2 px-2 btn btn-link text-neutral mx-auto sm:mx-0 dark:text-white hover:animate-pulse">
         <Link href={`/projects/${slug}`}>Find out more &rarr;</Link>
       </button>
     </div>

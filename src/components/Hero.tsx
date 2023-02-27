@@ -47,6 +47,7 @@ export const Hero = () => {
           />
         </div>
       </div>
+      <div className="divider w-1/4 mx-auto" />
     </>
   );
 };

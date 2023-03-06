@@ -1,5 +1,5 @@
 ---
-title: "Barelens Photography"
+title: "Bare Lens Photography"
 author: "Jonathan D."
 description: "Photography website with a custom CMS to manage client request"
 category: "Client Website"
@@ -30,7 +30,7 @@ I built this website with the following Tech Stack (**skip** this if you don't c
     </tr>
 </table>
 
-**Do** check out the repo on [Github](https://github.com/Jdure/Barelens) and [Barelens Photography](https://barelens.vercel.app/)'s site.
+**Do** check out the repo on [Github](https://github.com/Jdure/Barelens) and [Bare Lens Photography](https://barelens.vercel.app/)'s site.
 
 ## Purpose and Goal
 

@@ -1,8 +1,8 @@
 import { Hero } from "@/components/Hero";
 import { Contact } from "@/components/Contact";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { Card } from "@/components/Card";
 import { getProjectMetadata } from "lib/helper";
+import dynamic from "next/dynamic";
 
 type projectProps = {
   slug: string;
@@ -19,6 +19,11 @@ type frontmatterProps = {
   tags: string[];
 };
 
+const ProjectCards = dynamic(
+  () => import("@/components/Card").then((mod) => mod.Card),
+  { ssr: false }
+);
+
 export default function Home({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -33,7 +38,7 @@ export default function Home({
           <div className="flex flex-wrap -mx-4 -mb-10 text-center sm:text-justify">
             {projects.map((item: projectProps) => (
               <>
-                <Card
+                <ProjectCards
                   title={item.frontmatter.title}
                   bannerImage={item.frontmatter.bannerImage}
                   tags={item.frontmatter.tags}

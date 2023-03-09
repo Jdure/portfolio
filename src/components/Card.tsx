@@ -34,7 +34,7 @@ export const Card = ({
       </div>
       <h2 className="title-font text-2xl font-medium mt-6 mb-3">{title}</h2>
       <p className="text-xs leading-relaxed">
-        {new Date(date).toLocaleDateString()}
+        {new Date(date).toLocaleDateString("en-CA")}
       </p>
       <p className="leading-relaxed text-base">{description}</p>
       <button className="flex mt-6 border-0 py-2 px-2 btn btn-link text-neutral mx-auto sm:mx-0 dark:text-white hover:animate-pulse">

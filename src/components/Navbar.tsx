@@ -19,8 +19,8 @@ export const Navbar = () => {
         <Image
           className="m-2"
           src={theme === "emerald" ? "/logo.svg" : "/logo-white.svg"}
-          width={60}
-          height={60}
+          width={55}
+          height={55}
           alt="Code by JD"
         />
       </div>

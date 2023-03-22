@@ -32,7 +32,7 @@ Be sure to check out the [Github repo](https://github.com/Jdure/nouveau-threads)
 
 ![Cart](https://res.cloudinary.com/dhfp2qscl/image/upload/v1677345735/Screen_Shot_2023-02-25_at_12.18.18_PM_rvnjcr.png)
 
-I built this project to create a foundation for future e-commerce sites I plan on building. This site will serve as a solid base for me to make, enabling me to focus on the specifics of each new project rather than starting from scratch each time. Using Next.js, Tailwind, and Shopify Storefront API is a winning combination 🚀.
+I built this project to create a foundation for future e-commerce sites I plan on building. This site will serve as a solid base for me to make e-commerce sites, enabling me to focus on the specifics of each new project rather than starting from scratch each time. Using Next.js, Tailwind, and Shopify Storefront API is a winning combination 🚀.
 
 
 My goal with this project was to create an e-commerce site that was easy to use and provided an exceptional shopping experience. To achieve this, I designed the site with accessibility and mobile responsiveness in mind. For accessibility, I followed the [a11y checklist](https://www.a11yproject.com/checklist/) along with [Google's Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). In addition, I used a Tailwind library called [DaisyUI](https://daisyui.com/) to quickly design UI components for mobile responsiveness. Although there are some quirks with this component library.

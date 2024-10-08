@@ -3,7 +3,7 @@
 
 - 🚀 I’m currently learning **Swift, Svelte, Jest**
 
-- 🌐 My latest projects are available at [codebyjd.com](https://www.codebyjd.com)
+- 🌐 My latest projects are available at [codebyjd.com](https://app.codebyjd.com)
 
 - 💬 Ask me about **React, Next.js, Tailwind**
 
